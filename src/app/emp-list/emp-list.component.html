@@ -1,0 +1,21 @@
+<!-- <p>emp-list works!</p> -->
+<div class="row">
+    <table border="1">
+        <thead>
+            <tr *ngFor="let head of headers">
+                <th>{{head.name}}</th>
+                <th>{{head.age}}</th>
+                <th>{{head.department}}</th>
+                <th>{{head.action}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.age }} </td>
+            <td>{{ emp.department }} </td>
+        
+        <button (click)="deleteEmployee(emp.id)">delete</button>
+        </tbody>
+    </table>
+    
+</div>
