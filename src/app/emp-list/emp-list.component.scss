@@ -1,3 +1,25 @@
 td{
     margin: 10px;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 200px;
+}
+.header-left{
+    vertical-align: top;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 30px;
+}
+.table, .header{
+    margin: 0 300px;
+}
+
+.header-right{
+    margin-top: 10px;
+}

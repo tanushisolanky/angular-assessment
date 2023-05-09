@@ -12,10 +12,11 @@ export class AddEmpComponent {
     this.getUpdatedData = new EventEmitter <boolean>();
   }
 
-  onAddEmployee(employeeName: string, employeeAge: string, employeeDepartment: string){
-    this.empService.addEmployee(employeeName, employeeAge, employeeDepartment).subscribe((response: any) => {
+  onAddEmployee(firstName: string, lastName: string, email: string, department: string, address: string, contactNumber: string, description: any,  status: any){
+    this.empService.addEmployee(firstName, lastName, email, department, address, contactNumber, description, status).subscribe((response: any) => {
       console.log('response: ', response);
       this.getUpdatedData.next(true);
+
     });
 
   }

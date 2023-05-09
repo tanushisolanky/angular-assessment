@@ -9,9 +9,14 @@ import { EmpService } from '../emp.service';
 export class EmpListComponent {
   public headers = [
     {
-      name: "NAME",
-      age: "AGE",
-      department: "DEPARTMENT",
+      fname: "FIRST NAME",
+      lname: "LAST NAME",
+      email: "EMAIL",
+      dep: "DEPARTMENT",
+      address: "ADDRESS",
+      cn: "CONTACT NUMBER",
+      des: "DESCRIPTION",
+      status: 'STATUS',
       action: "ACTION"
     }
   ]

@@ -1,19 +1,42 @@
 <!-- <p>emp-list works!</p> -->
-<div class="row">
+
+
+<div class="header">
+    <div class="header-left">
+        <p>EMPLOYEE</p>
+    </div>
+    <div class="header-right">
+        <input type="text" placeholder="Search">
+        <a routerLink = "add-emp"><button class="btn-add-emp">  ADD EMPLOYEE</button></a>
+    </div>
+</div>
+
+<div class="table">
     <table border="1">
         <thead>
             <tr *ngFor="let head of headers">
-                <th>{{head.name}}</th>
-                <th>{{head.age}}</th>
-                <th>{{head.department}}</th>
+                <th>{{head.fname}}</th>
+                <th>{{head.lname}}</th>
+                <th>{{head.email}}</th>
+                <th>{{head.dep}}</th>
+                <th>{{head.address}}</th>
+                <th>{{head.cn}}</th>
+                <th>{{head.des}}</th>
+                <th>{{head.status}}</th>
                 <th>{{head.action}}</th>
+
+
             </tr>
         </thead>
         <tbody>
-            <td>{{ emp.name }}</td>
-            <td>{{ emp.age }} </td>
-            <td>{{ emp.department }} </td>
-        
+            <td>{{ emp.fname }}</td>
+            <td>{{ emp.lname }} </td>
+            <td>{{ emp.email }} </td>
+            <td>{{ emp.dep }} </td>
+            <td>{{ emp.address }} </td>
+            <td>{{ emp.cn }} </td>
+            <td>{{ emp.des | shorten}} </td>
+            <td>{{ emp.status }} </td>  
         <button (click)="deleteEmployee(emp.id)">delete</button>
         </tbody>
     </table>

@@ -2,21 +2,14 @@
   "employees": [
     {
       "id": 1,
-      "name": "Tanushi Solanky",
-      "age": 21,
-      "department": "FrontEnd"
-    },
-    {
-      "id": 2,
-      "name": "Tejas Ahire",
-      "age": 21,
-      "department": "DevOps"
-    },
-    {
-      "id": 26,
-      "name": "Jay Parmar",
-      "age": "24",
-      "department": "DevOps"
+      "fname": "Tanushi ",
+      "lname": "Solanky",
+      "email": "tanushisolanky@gmail.com",
+      "dep": "FrontEnd",
+      "address": "valsad",
+      "cn": "8200823627",
+      "des": "jkfhcwhfvhfgiovjreijgfire",
+      "status": "active"
     }
   ]
 }

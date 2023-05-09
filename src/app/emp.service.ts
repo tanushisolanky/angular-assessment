@@ -11,12 +11,17 @@ export class EmpService {
     return this.http.get(this.url + '/employees');
   }
 
-  addEmployee(employeeName: string, employeeAge: string, employeeDepartment: string){
+  addEmployee(firstName: string, lastName: string, email: string, department: any, address: any, contactNumber:string, description: any, status:any){
     const requestBody = {
       id: Math.floor(Math.random() * 90 + 10),
-      name: employeeName,
-      age: employeeAge,
-      department: employeeDepartment
+      fname: firstName,
+      lname: lastName,
+      email: email,
+      dep: department,
+      address: address,
+      cn: contactNumber,
+      des: description,
+      status: status,
     }
     return this.http.post(this.url + '/employees', requestBody);
   }

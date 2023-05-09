@@ -1,7 +1,5 @@
-<div class="container">
+<app-nav-bar></app-nav-bar>
 
-      <app-add-emp (getUpdatedData)="getUpdatedData($event)"></app-add-emp>
-      <app-emp-list *ngFor="let emp of employees; let i = index" [emp]="emp" [id]="i" (getUpdatedData)="getUpdatedData($event)"></app-emp-list>
-   
-</div>
+      <!-- <app-add-emp (getUpdatedData)="getUpdatedData($event)"></app-add-emp> -->
+      <app-emp-list *ngFor="let emp of employees; let i = index" [emp]="emp" [id]="i" (getUpdatedData)="getUpdatedData($event)"></app-emp-list>  
 <router-outlet></router-outlet>
